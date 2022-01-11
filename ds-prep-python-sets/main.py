@@ -1,5 +1,5 @@
 # 3
-trail_mix = set({'m&ms', 'peanuts', 'raisins'})
+trail_mix = {'m&ms', 'peanuts', 'raisins'}
 
 # 4
 print(trail_mix)
@@ -14,7 +14,7 @@ print('peanuts is in trail_mix: {}'.format('peanuts' in trail_mix))
 trail_mix.add('pretzels')
 
 # 10
-trail_mix.update(['peanuts', 'banana chips', 'bits of jerky'])
+trail_mix.update({'peanuts', 'banana chips', 'bits of jerky'})
 
 # 11
 print("Original set trail_mix after adding 'pretzels', 'peanuts', 'banana chips', and 'bit of jerky': {}".format(trail_mix))
@@ -32,7 +32,7 @@ trail_mix.discard('rat poison')
 print("Set trail_mix after removing 'm&ms', 'raisins', and 'rat poison': {}".format(trail_mix))
 
 # 17
-nuts = set({'peanuts', 'cashews', 'almonds', 'walnuts', 'pecans'})
+nuts = {'peanuts', 'cashews', 'almonds', 'walnuts', 'pecans'}
 
 # 19
 # i
