@@ -1,7 +1,8 @@
 import random
 
-day_of_week = 'monday'
-print ("It's a weekday!") if day_of_week == 'saturday' or 'sunday' else print ("Have a good weekend!")
+day_of_week = "thursday"
+print(day_of_week)
+print ("Have a good weekend!") if day_of_week == 'saturday' or day_of_week == 'sunday' else print ("Its a weekday!")
 
 student_1_score = random.randint(0,99) + random.randint(0,4)*0.25
 if student_1_score >= 70:
@@ -27,17 +28,22 @@ print('Student 2 score: {}, which is a/an: {}'.format(student_2_score, letter_gr
 
 def get_season_info(season):
   if season == "summer":
-    print("Statistically, it's likely to be hotter today than in 6 months from now. Don't sweat it, though.")
+    return "Statistically, it's likely to be hotter today than in 6 months from now. Don't sweat it, though."
   elif season == "spring":
-    print("The flowers are blooming while it's spring, but that correlation, not causation.")
+    return "The flowers are blooming while it's spring, but that correlation, not causation."
   elif season == "autumn":
-    print("The leaves seem to regress to warmer colors as autumn approaches its end.")
+    return "The leaves seem to regress to warmer colors as autumn approaches its end."
   elif season =="winter":
-    print("There may only be a high likelihood of it being cold today, but there's a 100 percent chance of me wanting that sweater.")
+    return "There may only be a high likelihood of it being cold today, but there's a 100 percent chance of me wanting that sweater."
   else:
-    print("That's not a season. Most likely.")
+    return "That's not a season. Most likely."
 
-get_season_info("fasdf")
+print(get_season_info("summer"))
+print(get_season_info("spring"))
+print(get_season_info("autumn"))
+print(get_season_info("winter"))
+print(get_season_info("wsdf"))
+
 
 age=42
 print("This is an adult") if age>=18 else print("This is a child")
